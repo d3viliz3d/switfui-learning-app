@@ -16,6 +16,8 @@
 		4DD2D1B6260AE7120082217A /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 4DD2D1B4260AE7120082217A /* data.json */; };
 		4DD2D1B9260AED370082217A /* Modules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2D1B8260AED370082217A /* Modules.swift */; };
 		4DD2D1BD260AFA0A0082217A /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2D1BC260AFA0A0082217A /* HomeViewRow.swift */; };
+		4DD2D1C0260B22BF0082217A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2D1BF260B22BF0082217A /* ContentView.swift */; };
+		4DD2D1C5260B2DF40082217A /* ContentViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD2D1C4260B2DF40082217A /* ContentViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4DD2D1B4260AE7120082217A /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		4DD2D1B8260AED370082217A /* Modules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modules.swift; sourceTree = "<group>"; };
 		4DD2D1BC260AFA0A0082217A /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
+		4DD2D1BF260B22BF0082217A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4DD2D1C4260B2DF40082217A /* ContentViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +72,6 @@
 				4DD2D1A42609FBF50082217A /* Resources */,
 				4DD2D1A32609FBE60082217A /* ViewModels */,
 				4DD2D1A22609FBE20082217A /* Views */,
-				4DD2D1912609FB730082217A /* HomeView.swift */,
 				4DD2D1932609FB750082217A /* Assets.xcassets */,
 				4DD2D1982609FB750082217A /* Info.plist */,
 				4DD2D1952609FB750082217A /* Preview Content */,
@@ -95,7 +98,10 @@
 		4DD2D1A22609FBE20082217A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				4DD2D1912609FB730082217A /* HomeView.swift */,
 				4DD2D1BC260AFA0A0082217A /* HomeViewRow.swift */,
+				4DD2D1BF260B22BF0082217A /* ContentView.swift */,
+				4DD2D1C4260B2DF40082217A /* ContentViewRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -197,7 +203,9 @@
 			files = (
 				4DD2D1922609FB730082217A /* HomeView.swift in Sources */,
 				4DD2D1BD260AFA0A0082217A /* HomeViewRow.swift in Sources */,
+				4DD2D1C0260B22BF0082217A /* ContentView.swift in Sources */,
 				4DD2D1B9260AED370082217A /* Modules.swift in Sources */,
+				4DD2D1C5260B2DF40082217A /* ContentViewRow.swift in Sources */,
 				4DD2D1902609FB730082217A /* LearningApp.swift in Sources */,
 				4DD2D1A72609FC280082217A /* ContentModel.swift in Sources */,
 			);

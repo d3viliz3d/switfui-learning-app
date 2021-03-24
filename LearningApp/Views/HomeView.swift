@@ -17,16 +17,27 @@ struct HomeView: View {
                 Text("Time to learn!")
                     .padding(.leading)
                 ScrollView {
-                    LazyVStack(spacing: 20) {
+                    LazyVStack(spacing: 15) {
                         ForEach(model.modules) { module in
                             
                             // Learning card
-                            HomeViewRow(title: "Learn \(module.category)", image: module.content.image, description: module.content.description, countString: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                            NavigationLink(
+                                destination:
+                                    ContentView()
+                                    .onAppear(perform: {
+                                        model.beginModule(module.id)
+                                    }),
+                                label: {
+                                    HomeViewRow(title: "Learn \(module.category)", image: module.content.image, description: module.content.description, countString: "\(module.content.lessons.count) Lessons", time: module.content.time)
+                                        
+                                }
+                            )
                             
                             // Test card
                             HomeViewRow(title: "\(module.category) Test", image: module.test.image, description: module.test.description, countString: "\(module.test.questions.count) Questions", time: module.test.time)
                         }
                     }
+                    .accentColor(.black)
                     .padding()
                 }
             }
